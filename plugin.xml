@@ -18,7 +18,7 @@
 
     <preference name="APP_ID" />
     <preference name="APP_NAME" />
-
+    
     <engines>
         <!-- Requires > 3.3.* because of the custom Framework tag for iOS [CB-5238] -->
         <!-- Requires > 3.5.0 because of the custom Framework tag for Android [CB-6698] -->
@@ -38,6 +38,8 @@
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="FacebookConnectPlugin">
                 <param name="android-package" value="org.apache.cordova.facebook.ConnectPlugin" />
+                <params name="APP_ID" value="324673564401635" />
+                <params name="APP_NAME" value="Meetooth" />
             </feature>
             <access origin="https://m.facebook.com" />
             <access origin="https://graph.facebook.com" />
@@ -70,6 +72,8 @@
             <feature name="FacebookConnectPlugin">
                 <param name="ios-package" value="FacebookConnectPlugin"/>
                 <param name="onload" value="true" />
+                <params name="APP_ID" value="324673564401635" />
+                <params name="APP_NAME" value="Meetooth" />
             </feature>
             <plugin name="FacebookConnectPlugin" value="FacebookConnectPlugin"/>
             <access origin="https://m.facebook.com" />
